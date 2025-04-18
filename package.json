@@ -1,0 +1,50 @@
+{
+    "name": "ghs-language-extension",
+    "displayName": "GHS Language Support",
+    "description": "Syntax highlighting and custom theme for General Hydrostatics (GHS) files.",
+    "version": "1.0.3",
+    "icon": "./images/logo.msc.png",
+    "publisher": "Trip Jackson",
+    "changelog": "./changelog.md",
+    "engines": {
+      "vscode": "^1.50.0"
+    },
+    "categories": ["Programming Languages", "Themes"],
+    "contributes": {
+      "languages": [
+        {
+          "id": "ghs",
+          "aliases": ["Run File", ".rf"],
+          "extensions": [".rf",".lib"],
+          "configuration": "./languages/language-configuration.json"
+        },
+        {
+          "id": "ghs-gf",
+          "aliases": ["Geometry File",".GF", "ghs"],
+          "extensions": [".gf",".gf1",".gf2",".gf3",".gf4",".gf5",".gf6",".gf7",".gf8",".gf9"],
+          "configuration": "./languages/language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "ghs",
+          "scopeName": "source.ghs",
+          "path": "./syntaxes/ghs.tmLanguage.json"
+        },
+        {
+          "language": "ghs-gf",
+          "scopeName": "source.ghs.gf",
+          "path": "./syntaxes/ghs-gf.tmLanguage.json"
+        }
+      ],
+      "iconThemes": [
+        {
+          "id":"vs-seti",
+          "label":"GHS File Icons / seti",
+          "path":"./images/vs-seti-icon-theme.json"
+        }
+      ]
+    },
+    "repository":{"type":"git","url":"https://github.com/microsoft/vscode.git"}
+}
+  

@@ -1,0 +1,15 @@
+{
+    "iconDefinitions": {
+      "ghsIcon": {
+        "iconPath": "./ghs-file-icon.png"
+      }
+    },
+    "fileExtensions": {
+      "rf": "ghsIcon",
+      "lib": "ghsIcon"
+    },
+    "languageIds": {
+      "ghs": "ghsIcon"
+    }
+  }
+  
