@@ -1,0 +1,70 @@
+{
+  "scopeName": "source.ghs.gf",
+  "name": "GHS GF",
+  "patterns": [
+    {
+    "name": "keyword.control.ghs",
+    "match": "\\*{1,5}$"
+    },
+    {
+      "name": "constant.language.Fluid.ghs",
+      "match": "(?i)\\b(sea water|salt water|fresh water|fuel oil|hydr oil)\\b"
+    },
+    {
+      "name": "entity.name.function.dot.ghs",
+      "match": "\\b\\w+\\.[A-Za-z]\\b"
+    },
+    {
+      "name": "constant.numeric.shape-section-count.gf", 
+      "match": "^\\d{1,3}$", 
+      "captures": {
+        "0": {
+          "name": "constant.numeric.shape-section-count.gf"
+        }
+      },
+      "begin": "^\\*$",  
+      "end": "^Location,"  
+    },
+    {
+      "name": "meta.shape.section.gf",
+      "begin": "^Location,\\s*\\d+\\s*(?:,\\s*\\w+)?$",
+      "end": "^$",
+      "patterns": [
+        {
+          "name": "constant.numeric.section-location.gf",
+          "match": "^Location,\\s*\\d+\\s*(?:,\\s*\\w+)?$"
+        },
+        {
+          "name": "constant.numeric.section-point.gf",
+          "match": "^\\d+,\\s*\\d+$"
+        }
+      ]
+    },
+    {
+      "name": "meta.shape.section-block.gf",
+      "begin": "^(-?\\d*\\.?\\d+),([1-9]\\d*)$",  
+      "beginCaptures": {
+        "1": { "name": "constant.numeric.section-location.gf" },
+        "2": { "name": "constant.numeric.point-count.gf" }
+      },
+      "end": "(?=^-?\\d*\\.?\\d+,[1-9]\\d*)", 
+      "patterns": [
+        {
+          "name": "meta.point.gf",
+          "match": "^-?\\d*\\.?\\d+\\s*,\\s*-?\\d*\\.?\\d+(?:\\s*,.*)?$"
+        }
+      ]
+    },
+    {
+      "name": "comment.line.gf",
+      "match": "\\\\.*$"
+    },
+    {
+      "name": "keyword.control.gf",
+      "match": "\\b(?:L:|W:|N:|OL:|OT:)\\b"
+    }
+  ],
+  "repository": {},
+  "fileTypes": ["gf", "gf1", "gf2"],
+  "uuid": "a3f9c4c4-672f-11ec-90d6-0242ac120003"
+}
