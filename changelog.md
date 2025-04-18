@@ -18,5 +18,6 @@ All notable changes to this project will be documented in this file.
 ## [1.0.3] - 2025-04-18
 ### Added
 - Added support for `.gf` files 
-- Still very much in progress but better than nothing! 
+- Still very much in progress but better than nothing!
+- Working on Github-ing this extension 
 
