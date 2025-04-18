@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "ghs",
     "scopeName": "source.ghs",
@@ -86,4 +87,94 @@
     }
 
   }
+=======
+{
+    "name": "ghs",
+    "scopeName": "source.ghs",
+    "patterns": [
+
+      {
+        "name": "comment.line.ghs",
+        "match": "`[^\\n]*"
+      },
+      {
+        "name": "keyword.control.ghs",
+        "match": "(?i)\\b(RUN|READ|SOLVE|SO|REPORT|PRINT|MODIFY|VARIABLE|SET|TRIM|HEEL|AXIS|VARY|ME|LOAD|ANG|ANGLES|STATUS|STAT|VARI)\\b"
+      },
+      {
+        "name": "keyword.conditional.ghs",
+        "match": "(?i)\\b(IF|THEN|ELSE)\\b"
+      },
+      {
+        "name": "constant.language.ghs",
+        "match": "(?i)\\b(exit|end)\\b"
+      },
+      {
+        "name": "keyword.misc.ghs",
+        "match": "(?i)\\b(wait|break)\\b"
+      },
+      {
+        "name": "keyword.operator.ghs",
+        "match": "(<=|>=|:=|=|<|>)"
+      },
+      {
+        "name": "punctuation.delimiter.parenthesis.ghs",
+        "match": "[\\(\\)]"
+      },
+      {
+        "name": "string.quoted.double.ghs",
+        "begin": "\"",
+        "end": "\"",
+        "patterns": [
+          { "include": "#functioncall" },
+          {
+            "match": "\\\\.",
+            "name": "constant.character.escape.ghs"
+          },
+          { "include": "#functioncall"}
+        ]
+      },
+      {
+        "name": "string.slashed.double.ghs",
+        "begin": "\\\\(?=.*\\\\)",
+        "end": "\\\\",
+        "patterns": [
+            {
+                "match": "[^\\\\]+",
+                "name": "constant.character.slash.ghs"
+            }
+        ]
+      },
+      {
+        "name": "variable.parameter.brackets.ghs",
+        "begin": "\\{",
+        "end": "\\}",
+        "patterns": [
+          {
+            "match": "[^{}]+]",
+            "name": "variable.parameter.brackets.ghs"
+          }
+        ]
+      },
+      {
+        "name": "entity.name.function.dot.ghs",
+        "match": "(?<![\\w\\d])\\.\\w+"
+      }
+    ],
+    "repository": {
+      "functioncall":{
+        "name": "variable.quoted.brackets.ghs",
+        "begin": "\\{",
+        "end": "\\}",
+        "patterns": [
+          {
+            "match": "[^{}]+]",
+            "name": "variable.parameter.brackets.ghs"
+          }
+        ]
+      }
+    }
+
+  }
+>>>>>>> f9caf9655e0fc5e17e1e3d4704f912b9b082f92a
   

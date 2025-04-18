@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "comments": {
     "lineComment": "\\"
@@ -24,3 +25,31 @@
     "decreaseIndentPattern": "^$"
   }
 }
+=======
+{
+  "comments": {
+    "lineComment": "\\"
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"" }
+  ],
+  "surroundingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"" }
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^\\*$|^Location,",
+    "decreaseIndentPattern": "^$"
+  }
+}
+>>>>>>> f9caf9655e0fc5e17e1e3d4704f912b9b082f92a

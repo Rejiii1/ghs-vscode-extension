@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "comments": {
       "lineComment": "*"
@@ -24,4 +25,32 @@
     ],
     "wordPattern": "[^\\s\\(\\)\\[\\]\\*\\\"']+"
   }
+=======
+{
+    "comments": {
+      "lineComment": "*"
+    },
+    "folding":{
+      "markers":{
+        "start": "^\\s*(?i:macro)\\b.*$",
+        "end": "^/$"
+      }
+    },
+    "brackets": [
+      ["(", ")"],
+      ["[", "]"]
+    ],
+    "autoClosingPairs": [
+      { "open": "(", "close": ")" },
+      { "open": "[", "close": "]" },
+      { "open": "\"", "close": "\"", "notIn": ["string"] }
+    ],
+    "surroundingPairs": [
+      { "open": "(", "close": ")" },
+      { "open": "[", "close": "]" },
+      { "open": "\"", "close": "\"" }
+    ],
+    "wordPattern": "[^\\s\\(\\)\\[\\]\\*\\\"']+"
+  }
+>>>>>>> f9caf9655e0fc5e17e1e3d4704f912b9b082f92a
   
