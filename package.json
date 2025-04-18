@@ -3,7 +3,7 @@
     "displayName": "GHS Language Support",
     "description": "Syntax highlighting and custom theme for General Hydrostatics (GHS) files.",
     "version": "1.0.3",
-    "icon": "./images/logo.msc.png",
+    "icon": "./images/Dunkin-ale-50.png",
     "publisher": "Trip Jackson",
     "changelog": "./changelog.md",
     "engines": {
